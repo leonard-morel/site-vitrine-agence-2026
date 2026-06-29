@@ -29,8 +29,8 @@ useSeoMeta({
           </div>
           <ul class="hero__highlights">
             <li>Réponse sous 48h ouvrées</li>
-            <li>Site pensé pour la conversion</li>
-            <li>Fondations SEO intégrées</li>
+            <li>Sites pensés pour la conversion</li>
+            <li>Stratégies SEO cohérentes</li>
           </ul>
         </div>
 
