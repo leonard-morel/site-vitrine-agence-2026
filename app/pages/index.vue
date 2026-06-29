@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { agency, faqItems, processSteps, services } from '~/data/site'
+import { faqItems, processSteps, services } from '~/data/site'
+
+const agency = useAgency()
 
 useSeoMeta({
   title: 'Agence web en France',
-  description: agency.description,
-  ogTitle: 'Exemple | Création de site web et référencement web',
-  ogDescription: agency.description
+  description: agency.value.description,
+  ogTitle: `${agency.value.name} | Création de site web et référencement web`,
+  ogDescription: agency.value.description
 })
 </script>
 
@@ -19,7 +21,7 @@ useSeoMeta({
             Faites de votre site web un (vrai) levier de croissance !
           </h1>
           <p class="hero__lead">
-            {{ agency.name }} accompagne les entreprises et indépendants vers un objectif simple : faire de leur site web un investissement rentable, grâce à la génération de trafic qualifié, de prospects et de nouveaux clients.
+            {{ agency.name }} accompagne les entreprises et indépendants vers un objectif simple : faire de votre site web un investissement rentable, grâce à la génération de trafic qualifié, de prospects et de nouveaux clients.
           </p>
           <div class="hero__actions">
             <NuxtLink to="/contact" class="button button--primary">Demander un devis</NuxtLink>

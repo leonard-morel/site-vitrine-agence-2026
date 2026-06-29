@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { agency } from '~/data/site'
+const agency = useAgency()
 
 useSeoMeta({
   title: 'Contact',
-  description: `Contactez ${agency.name} pour demander un devis en création de site web ou référencement web.`
+  description: `Contactez ${agency.value.name} pour demander un devis en création de site web ou référencement web.`
 })
 
 const form = reactive({
@@ -77,10 +77,6 @@ async function handleSubmit() {
             <li>
               <strong>Email</strong>
               <a :href="`mailto:${agency.email}`">{{ agency.email }}</a>
-            </li>
-            <li>
-              <strong>Adresse</strong>
-              <span>{{ agency.address }}</span>
             </li>
             <li>
               <strong>Disponibilités</strong>

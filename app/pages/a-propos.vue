@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { agency, processSteps } from '~/data/site'
+import { processSteps } from '~/data/site'
+
+const agency = useAgency()
 
 useSeoMeta({
   title: 'À propos',
-  description: `La méthode de ${agency.name}, agence web en France pour la création de site et le SEO.`
+  description: `La méthode de ${agency.value.name}, agence web en France pour la création de site et le SEO.`
 })
 </script>
 

@@ -2,10 +2,9 @@ export const agency = {
   name: 'Exemple',
   tagline: 'Des sites clairs. Du SEO utile. Des demandes qui tombent.',
   description:
-    "Agence web française spécialisée dans la création de sites internet professionnels et le référencement naturel pour les entreprises qui veulent gagner en visibilité et transformer leurs visites en demandes concrètes.",
+    "Agence web française spécialisée dans la création de sites internet professionnels et le référencement naturel. Nous oeuvrons pour des entreprises voulant gagner en visibilité et transformer leurs visites en actes de vente ou autres demandes concrètes.",
   phone: '+33 (0)1 89 71 24 60',
   email: 'contact@exemple.fr',
-  address: '12 rue des Entrepreneurs, 75010 Paris',
   hours: 'Du lundi au vendredi, de 9h00 à 18h30'
 }
 
@@ -21,7 +20,7 @@ export const services = [
     title: 'Création de site web',
     slug: 'creation-site-web',
     intro:
-      'Un site vitrine ou un site de présentation conçu pour inspirer confiance, expliquer clairement votre offre et déclencher des prises de contact.',
+      'Un site vitrine ou de présentation conçu pour inspirer confiance, expliquer clairement votre offre et déclencher des achats ou prises de contact.',
     bullets: [
       'Architecture de pages orientée conversion',
       'Design responsive et professionnel',

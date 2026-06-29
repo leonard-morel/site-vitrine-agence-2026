@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { agency, navigation } from '~/data/site'
+import { navigation } from '~/data/site'
+
+const agency = useAgency()
 </script>
 
 <template>
@@ -18,12 +20,6 @@ import { agency, navigation } from '~/data/site'
           <li v-for="item in navigation" :key="item.to">
             <NuxtLink :to="item.to">{{ item.label }}</NuxtLink>
           </li>
-          <li>
-            <NuxtLink to="/mentions-legales">Mentions légales</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/politique-confidentialite">Politique de confidentialité</NuxtLink>
-          </li>
         </ul>
       </div>
 
@@ -36,7 +32,6 @@ import { agency, navigation } from '~/data/site'
           <li>
             <a :href="`mailto:${agency.email}`">{{ agency.email }}</a>
           </li>
-          <li>{{ agency.address }}</li>
           <li>{{ agency.hours }}</li>
         </ul>
       </div>

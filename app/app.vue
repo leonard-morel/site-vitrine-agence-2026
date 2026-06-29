@@ -1,10 +1,14 @@
 <script setup lang="ts">
+const agency = useAgency()
+
 useHead({
   htmlAttrs: {
     lang: 'fr'
   },
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} | Exemple` : 'Exemple | Agence web en France'
+    return titleChunk
+      ? `${titleChunk} | ${agency.value.name}`
+      : `${agency.value.name} | Agence web en France`
   },
   meta: [
     {

@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { agency, services } from '~/data/site'
+import { services } from '~/data/site'
+
+const agency = useAgency()
 
 useSeoMeta({
   title: 'Services',
-  description: `Les prestations de ${agency.name} : création de site web et référencement web pour les entreprises en France.`
+  description: `Les prestations de ${agency.value.name} : création de site web et référencement web pour les entreprises en France.`
 })
 </script>
 
@@ -12,7 +14,7 @@ useSeoMeta({
     <section class="page-hero">
       <div class="container">
         <p class="section-heading__eyebrow">Services</p>
-        <h1 class="page-hero__title">Deux expertises pour renforcer votre présence en ligne</h1>
+        <h1 class="page-hero__title">Deux expertises pour renforcer votre présence en ligne.</h1>
         <p class="page-hero__lead">
           Notre agence se concentre sur deux uniques leviers complémentaires, qui doivent constituer le socle de toute présence en ligne. D'une part, un site web qui convertit et de l'autre, un référencement web (SEO) axé sur des requêtes génératrices de trafic qualifié pour votre entreprise.
         </p>
