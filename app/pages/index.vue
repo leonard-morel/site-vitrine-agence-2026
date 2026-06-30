@@ -36,7 +36,7 @@ useSeoMeta({
 
         <aside class="hero-panel">
           <p class="hero-panel__label">Notre angle</p>
-          <h2>Simple, propre et surtout utile.</h2>
+          <h2>Utile et efficace</h2>
           <p>
             Chacune de vos pages web doit aider vos visiteurs à comprendre votre offre, la comparer et vous contacter.
           </p>
